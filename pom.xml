@@ -12,8 +12,9 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
         <errorprone.version>2.25.0</errorprone.version>
-        <error-prone-support.version>0.15.0</error-prone-support.version>
+        <picnic-error-prone.version>0.16.1</picnic-error-prone.version>
         <errorprone.args/>
     </properties>
 
@@ -21,7 +22,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.12.1</version>
+                <version>${maven-compiler-plugin.version}</version>
                 <inherited>true</inherited>
                 <configuration>
                     <fork>true</fork>
@@ -61,7 +62,7 @@
                                 <processorPath>
                                     <groupId>tech.picnic.error-prone-support</groupId>
                                     <artifactId>error-prone-contrib</artifactId>
-                                    <version>0.16.1</version>
+                                    <version>${picnic-error-prone.version}</version>
                                 </processorPath>
                             </annotationProcessorPaths>
                         </configuration>
