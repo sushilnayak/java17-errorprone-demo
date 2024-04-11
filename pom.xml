@@ -64,6 +64,11 @@
                                     <artifactId>error-prone-contrib</artifactId>
                                     <version>${picnic-error-prone.version}</version>
                                 </processorPath>
+                                <processorPath>
+                                    <groupId>tech.picnic.error-prone-support</groupId>
+                                    <artifactId>refaster-runner</artifactId>
+                                    <version>${picnic-error-prone.version}</version>
+                                </processorPath>
                             </annotationProcessorPaths>
                         </configuration>
                     </execution>
